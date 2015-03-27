@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  #talk-suscription.col-md-12
+  form(method="POST" action="#")
+    #form-title
+      h4  Registrar asistencia: 
+      em recuerda cupos limitados (30)
+    #name-field
+      input(id="user-name" placeholder="Su nombre")
+      #error-field
+    #name-field
+      input(id="email" placeholder="Email")
+      #error-field
+    h4  Recomienda una charla
+    #name-field
+      textarea(id="email" placeholder="Escribe aquí sobre que")
+    #name-field
+      button(type="button").btn.btn-success.btn-lg Inscribir a Charla

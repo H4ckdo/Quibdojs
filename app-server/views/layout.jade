@@ -1,0 +1,31 @@
+doctype html
+html
+head
+  title= title
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/bootstrap/css/to-use/bootstrap.min.css')
+body
+  .fluid-container.navbar-default
+    #navigation-section.container
+      ul.nav.nav-pills
+        li.nav-item
+          a(href="#") Inicio
+        li.nav-item
+          a(href="#") Blog
+        li.nav-item
+          a(href="#") Videos
+        li.nav-item
+          a(href="#") Lista de charlas
+  .container
+    div.row
+      #talk-description.col-md-6
+        h1 Título de la charla
+        p Aquí va la descripción de la charla
+        a(href="charlas").btn.btn-info.btn-lg Ver información detallada
+      #talk-ilustration.col-md-6
+        h2 Aquí una ilustración o imagen
+    div.row
+      #page-content.col-md-6
+        block content
+  script(type="text/javascript" src="libs/jquery-1.11.2.min.js")
+  script(type="text/javascript" src="bootstrap/js/bootstrap.min.js")
