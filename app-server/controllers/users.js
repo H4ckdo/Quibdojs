@@ -1,5 +1,5 @@
 /* GET user profile */
-exports.profile = function(req, res, next) {
+module.exports.profile = function(req, res, next) {
 	res.render('user',
 		{
 			title: "Perfil de usuario",

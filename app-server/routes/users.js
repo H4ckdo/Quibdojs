@@ -1,5 +1,5 @@
 var express = require('express');
-var ctrl = require('../app-server/controllers/users');
+var ctrl = require('../controllers/users');
 var routes = express.Router(); //creamos el router
 
 routes.get('/', ctrl.profile);

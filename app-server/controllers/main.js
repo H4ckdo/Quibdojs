@@ -1,10 +1,10 @@
 /* GET home page. */
-exports.index = function (req, res, next) {
+module.exports.index = function (req, res, next) {
 	res.render('index', {title: "Quibdojs"});
 	next();//ejecuta la siguiente funcion si se especifica en la ruta
 };
 
-exports.indexLogs = function(req, res) {
+module.exports.indexLogs = function(req, res) {
 	//testing funcion as middlewares with routes
 	console.log(req.url);
 	var i = [1,2,3,4,5,6];
@@ -14,7 +14,7 @@ exports.indexLogs = function(req, res) {
 };
 
 /* GET home page. */
-exports.charla = function (req, res) {
+module.exports.charla = function (req, res) {
 	res.render('charla',
 		{
 			speaker: "Jhonatan Cordoba",
